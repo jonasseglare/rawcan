@@ -303,6 +303,7 @@ void CANWrap::pollCallback(int status, int events)
 
               if (use_node_can_style) {
                 const int arg_count = 1;
+                Nan::HandleScope scope;
                 v8::Local<v8::Value> argv[arg_count] = {
                   wrapMessage(m_socket, m_recvBuffer)
                 };
