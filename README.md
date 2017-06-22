@@ -1,5 +1,16 @@
+## Modifed version of ```rawcan```
+Modifications:
+ - Provide the timestamp to the 'message' listener callback and
+   pass the arguments to that callback the same way as in node-can,
+   see https://github.com/sebi2k1/node-can.
+
+   See also the source code, especially the function wrapMessage and 
+   where it is used.
+
 # rawcan
+```
 [![Build Status](https://travis-ci.org/jjkr/rawcan.svg?branch=master)](https://travis-ci.org/jjkr/rawcan)
+```
 
 Lightweight asynchronous Node.js bindings for SocketCAN. SocketCAN is a socket based implementation of the CAN bus protocol for the Linux kernel, developed primarily by VW.
 
